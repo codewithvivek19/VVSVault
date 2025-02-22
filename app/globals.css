@@ -4,10 +4,22 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff; /* Optional: Set a background color */
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.gradient-title {
+  background: linear-gradient(90deg, #ffffff, #e0e0e0, #c0c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.text-white {
+  color: white; /* Ensure text is white */
 }
 
 @layer base {

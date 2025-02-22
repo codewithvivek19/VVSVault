@@ -10,14 +10,14 @@ const Header = async () => {
   await checkUser();
 
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
+    <header className="fixed top-0 w-full bg-black/50 backdrop-blur-md z-50 ">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
           <Image
             src={"/logo.png"}
-            alt="Welth Logo"
-            width={200}
-            height={60}
+            alt="VVS Vault Logo"
+            width={300}
+            height={100}
             className="h-12 w-auto object-contain"
           />
         </Link>
@@ -25,12 +25,12 @@ const Header = async () => {
         {/* Navigation Links - Different for signed in/out users */}
         <div className="hidden md:flex items-center space-x-8">
           <SignedOut>
-            <a href="#features" className="text-gray-600 hover:text-blue-600">
+            <a href="#features" className="text-white hover:text-blue-600">
               Features
             </a>
             <a
               href="#testimonials"
-              className="text-gray-600 hover:text-blue-600"
+              className="text-white hover:text-blue-600"
             >
               Testimonials
             </a>
