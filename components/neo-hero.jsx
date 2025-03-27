@@ -189,9 +189,9 @@ const NeoHero = () => {
                 <div ref={codeBlockRef} className="neo-code-block">
                   <pre className="overflow-x-auto text-sm">
                     <code>
-                      <span className="text-blue-400">const</span> <span className="text-green-400">vvs</span> <span className="text-blue-400">=</span> <span className="text-yellow-400">createFinancialAccount</span>&#40;<span className="text-purple-400">'user@example.com'</span>&#41;;<br/><br/>
+                      <span className="text-blue-400">const</span> <span className="text-green-400">vvs</span> <span className="text-blue-400">=</span> <span className="text-yellow-400">createFinancialAccount</span>&#40;<span className="text-purple-400">&apos;user@example.com&apos;</span>&#41;;<br/><br/>
                       <span className="text-green-400">vvs</span>.<span className="text-yellow-400">connect</span>&#40;&#41;.<span className="text-yellow-400">then</span>&#40;<span className="text-orange-400">account</span> <span className="text-blue-400">={">"}</span> &#123;<br/>
-                      {'  '}<span className="text-red-400">// Get real-time financial insights</span><br/>
+                      {'  '}<span className="text-red-400">{'// Get real-time financial insights'}</span><br/>
                       {'  '}<span className="text-blue-400">const</span> <span className="text-green-400">insights</span> <span className="text-blue-400">=</span> <span className="text-blue-400">await</span> <span className="text-orange-400">account</span>.<span className="text-yellow-400">getInsights</span>&#40;&#41;;<br/>
                       {'  '}<span className="text-blue-400">const</span> <span className="text-green-400">recommendations</span> <span className="text-blue-400">=</span> <span className="text-blue-400">await</span> <span className="text-orange-400">account</span>.<span className="text-yellow-400">getRecommendations</span>&#40;&#41;;<br/>
                       &#125;&#41;;

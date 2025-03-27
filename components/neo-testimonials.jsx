@@ -100,7 +100,7 @@ const NeoTestimonials = () => {
               
               <blockquote className="mt-4">
                 <p className="text-lg text-gray-700 dark:text-gray-300 font-medium italic leading-relaxed">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
               </blockquote>
               

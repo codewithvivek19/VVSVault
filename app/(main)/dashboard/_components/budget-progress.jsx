@@ -302,7 +302,7 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <p className="italic">"{getBudgetMessage()}"</p>
+              <p className="italic">&quot;{getBudgetMessage()}&quot;</p>
             </motion.div>
           </>
         )}
