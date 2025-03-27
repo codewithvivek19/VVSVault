@@ -1,13 +1,13 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { defaultCategories } from "@/data/categories";
 import { AddTransactionForm } from "../_components/transaction-form";
 import { getTransaction } from "@/actions/transaction";
 import { getUserAccounts } from "@/actions/dashboard";
 
-export default function AddTransactionPage() {
+function TransactionPageContent() {
   const searchParams = useSearchParams();
   const [accounts, setAccounts] = useState([]);
   const [initialData, setInitialData] = useState(null);
@@ -58,5 +58,17 @@ export default function AddTransactionPage() {
         initialData={initialData}
       />
     </div>
+  );
+}
+
+export default function AddTransactionPage() {
+  return (
+    <Suspense fallback={
+      <div className="max-w-3xl mx-auto px-5 py-10 flex justify-center">
+        <div className="animate-pulse h-4 w-32 bg-gray-200 rounded"></div>
+      </div>
+    }>
+      <TransactionPageContent />
+    </Suspense>
   );
 }
